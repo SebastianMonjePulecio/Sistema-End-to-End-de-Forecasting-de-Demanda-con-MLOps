@@ -1,1 +1,0 @@
-["promotion_active", "unit_cost", "lead_time_days", "is_weekend", "day_of_week_sin", "day_of_week_cos", "month_sin", "month_cos", "lag_1d", "lag_7d", "lag_14d", "lag_30d", "rolling_mean_7d", "rolling_std_7d", "rolling_max_7d", "rolling_mean_14d", "rolling_std_14d", "rolling_max_14d", "rolling_mean_30d", "rolling_std_30d", "rolling_max_30d", "expanding_mean", "change_1d"]
