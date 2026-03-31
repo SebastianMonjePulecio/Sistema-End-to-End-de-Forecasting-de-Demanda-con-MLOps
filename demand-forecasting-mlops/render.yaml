@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: demand-forecast-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd src/api && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+
+  - type: web
+    name: demand-forecast-dashboard
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd src/dashboard && streamlit run app.py --server.port $PORT --server.address 0.0.0.0
